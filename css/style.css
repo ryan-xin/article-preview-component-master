@@ -1,0 +1,65 @@
+h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ------------------- Main container ------------------- */
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.main-container {
+  width: 730px;
+  height: 280px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-image {
+  /* flex-basis: 35%; */
+}
+
+.drawers-image {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  object-position: 0% 0;
+}
+
+.right-content {
+  /* flex-basis: 65%; */
+}
+
+.user-image-circle {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/* --------------------- Attribution -------------------- */
+  .attribution {
+    position: absolute;
+    bottom: 20px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
