@@ -83,10 +83,6 @@ body {
   cursor: pointer;
 }
 
-/* .share-button:hover {
-  background-color: hsl(214, 17%, 51%);
-} */
-
 .share-icons-container {
   position: absolute;
   background-color: hsl(217, 19%, 35%);
@@ -127,6 +123,10 @@ body {
 .share-icons {
   display: flex;
   gap: 15px;
+}
+
+.social-media-icon {
+  cursor: pointer;
 }
 
 /* --------------------- Attribution -------------------- */
