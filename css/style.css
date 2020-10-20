@@ -130,13 +130,38 @@ body {
 }
 
 /* --------------------- Attribution -------------------- */
-  .attribution {
-    position: absolute;
-    bottom: 20px;
-    font-size: 11px;
-    text-align: center;
-  }
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  font-size: 11px;
+  text-align: center;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+  
+/* ----------------------- Tablet ----------------------- */
+
+@media screen and (max-width: 728px ) {
+  .main-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px hsl(212, 24%, 86%);
+    margin-left: 40px;
+    margin-right: 40px;
   }
+  
+  .drawers-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 80%;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+/* ----------------------- Mobile ----------------------- */
