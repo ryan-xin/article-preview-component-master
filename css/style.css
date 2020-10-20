@@ -147,21 +147,83 @@ body {
   .main-container {
     width: auto;
     height: auto;
-    display: flex;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 20px 40px hsl(212, 24%, 86%);
     margin-left: 40px;
     margin-right: 40px;
   }
   
   .drawers-image {
     width: 100%;
-    object-fit: cover;
     object-position: 20% 80%;
     border-radius: 10px 10px 0 0;
+  }
+  
+  .share-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .share-icons-container {
+    left: -110px;
+  }
+  
+  .right-content {
+    padding: 40px 40px 20px 40px;
+  }
+  
+  .content p {
+    margin: 20px 0 40px;
   }
 }
 
 /* ----------------------- Mobile ----------------------- */
+
+@media screen and (max-width: 375px) {
+  body, html {
+    height: auto;
+  }
+  
+  body {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .right-content {
+    padding: 40px 30px 20px;
+  }
+  
+  .main-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+  
+  .share-container {
+    z-index: 1;
+  }
+  
+  .share-button {
+    z-index: 3;
+  }
+  
+  .share-icons-container {
+    top: -19px;
+    left: -265px;
+    justify-content: flex-start;
+    width: 335px;
+    height: 80px;
+    padding-left: 30px;
+    border-radius: 0 0 10px 10px;
+    z-index: -1;
+    box-shadow: none;
+  }
+  
+  .share-icons-container::before {
+    border-top: 10px solid transparent;
+  }
+  
+  .attribution {
+    position: static;
+  }
+  
+}
